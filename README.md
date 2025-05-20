@@ -1,14 +1,28 @@
 Super Trunfo em C
 
-Este projeto em C implementa um programa simples para cadastro e exibição de duas cartas do jogo Super Trunfo.
+
+
+Implementação em C para cadastro e exibição de duas cartas do jogo Super Trunfo, focada em variáveis e operações de entrada/saída.
+
+📑 Sumário
 
 Funcionalidades
 
-Lê via teclado as informações de duas cartas:
+Pré-requisitos
+
+Como compilar
+
+Como executar
+
+Autor
+
+Funcionalidades
+
+Leitura via teclado de duas cartas, cada uma com:
 
 Estado (char de 'A' a 'H')
 
-Código da Carta (string no formato A01 a H04)
+Código da Carta (string A01 a H04)
 
 Nome da Cidade (string)
 
@@ -18,27 +32,30 @@ População (int)
 
 PIB (float em bilhões de Reais)
 
-Número de Pontos Turísticos (int)
+Pontos Turísticos (int)
 
-Armazena cada dado em variáveis apropriadas.
+Armazenamento em variáveis apropriadas.
 
-Exibe no terminal os dados de cada carta de forma organizada.
+Exibição formatada e organizada no terminal.
 
-Pré-requisitos:
+Pré-requisitos
 
-GCC (ou outro compilador C compatível)
+GCC ou outro compilador C compatível.
 
-Como compilar:
+Como compilar
 
 gcc cartasupertrunfo.c -o cartasupertrunfo.exe
 
-Como executar:
+Como executar
 
-./cartasupertrunfo.exe~
-
+./cartasupertrunfo.exe
 
 Siga as instruções exibidas no terminal para inserir os dados de cada carta.
 
-Autor: Enrique Linhares Gomides
+Autor
+
+Enrique Linhares Gomides
+
 Data: 19/05/2025
+
 Curso: Análise e Desenvolvimento de Sistemas
