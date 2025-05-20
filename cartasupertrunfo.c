@@ -26,9 +26,11 @@ int main(void){
     char codigo[4];
     char nome_cidade[50];
     int populacao;
-    float area;
-    float pib;
+    double area;
+    double pib;
     int ponto_turistico;
+    double densidade_populacional;
+    double pib_per_capta;
 
     // Leitura do estado
     printf("Digite a letra do Estado correspondente a carta:\n");
@@ -53,15 +55,19 @@ int main(void){
 
     // Leitura da area
      printf("Digite o tamanho da area:\n");
-    scanf("%f", &area);
+    scanf("%lf", &area);
 
     // Leitura do PIB
     printf("Digite o valor do pib:\n");
-    scanf("%f", &pib);
+    scanf("%lf", &pib);
 
     // Leitura ponto turistico
     printf("Digite a quantidade de pontos turisticos:\n");
     scanf("%d", &ponto_turistico);
+
+    // Definindo o calculo das variaveis
+    densidade_populacional = populacao/area;
+    pib_per_capta = (pib * 1e9)/populacao;
 
     printf(
         "\n--- Carta 1 ---\n"
@@ -71,9 +77,11 @@ int main(void){
         "Tamanho da Populacao: %d\n"
         "Area: %.2f Km quadrados\n"
         "PIB: %.2f Bilhoes de Reais\n"
-        "Nmero de Pontos Tursticos: %d\n",
+        "Nmero de Pontos Tursticos: %d\n"
+        "Densidade Populacional: %.2f Hab/km\n"
+        "PIB per Capita: %.2f reais\n",
 
-        estado, codigo, nome_cidade, populacao, area, pib, ponto_turistico
+        estado, codigo, nome_cidade, populacao, area, pib, ponto_turistico, densidade_populacional, pib_per_capta
     );
 
     // Carta 2
@@ -83,9 +91,11 @@ int main(void){
     char codigo2[4];
     char nome_cidade2[50];
     int populacao2;
-    float area2;
-    float pib2;
+    double area2;
+    double pib2;
     int ponto_turistico2;
+    double densidade_populacional2;
+    double pib_per_capta2;
 
     // Leitura do estado Carta 2
     printf("Digite a letra do Estado correspondente a carta:\n");
@@ -110,15 +120,19 @@ int main(void){
 
     // Leitura da area Carta 2
      printf("Digite o tamanho da area:\n");
-    scanf("%f", &area2);
+    scanf("%lf", &area2);
 
     // Leitura do PIB Carta 2
     printf("Digite o valor do pib:\n");
-    scanf("%f", &pib2);
+    scanf("%lf", &pib2);
 
     // Leitura ponto turistico Carta 2
     printf("Digite a quantidade de pontos turisticos:\n");
     scanf("%d", &ponto_turistico2);
+
+    // Definindo o calculo das variaveis
+    densidade_populacional2 = populacao2/area2;
+    pib_per_capta2 = (pib2 * 1e9)/populacao2;
 
     printf(
         "\n--- Carta 2 ---\n"
@@ -128,9 +142,10 @@ int main(void){
         "Tamanho da Populacao: %d\n"
         "Area: %.2f Km quadrados\n"
         "PIB: %.2f Bilhoes de Reais\n"
-        "Nmero de Pontos Tursticos: %d\n",
+        "Nmero de Pontos Tursticos: %d\n""Densidade Populacional: %.2f Hab/km\n"
+        "PIB per Capita: %.2f reais\n",
 
-        estado2, codigo2, nome_cidade2, populacao2, area2, pib2, ponto_turistico2
+        estado2, codigo2, nome_cidade2, populacao2, area2, pib2, ponto_turistico2, densidade_populacional2, pib_per_capta2
     );
 
     return 0;

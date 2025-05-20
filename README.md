@@ -36,6 +36,8 @@ Pontos Turísticos (int)
 
 Armazenamento em variáveis apropriadas.
 
+Cálculo de densidade populacional e PIB per Capita
+
 Exibição formatada e organizada no terminal.
 
 Pré-requisitos
