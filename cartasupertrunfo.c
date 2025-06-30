@@ -180,7 +180,17 @@ int main(void){
     printf("PIB per Capita: Carta %d venceu (%d)\n", venceu_pib_per_capta ? 1 : 2, venceu_pib_per_capta);
     printf("Super Poder: Carta %d venceu (%d)\n", venceu_super_poder ? 1 : 2, venceu_super_poder);
    
+    
+    // comparação de um unico atributo (População)
+    printf("\nComparacao de Populacao:\n\n");
+
+    if (populacao > populacao2 ){
+        printf("Carta 1 %s - %lu\nCarta 2 %s - %lu\n\"Resultado:Carta 1(%s) venceu na Populacao!\n\"", nome_cidade, populacao, nome_cidade2, populacao2, nome_cidade);
+    } else if (populacao < populacao2) {
+        printf("Carta 1 %s - %lu\n Carta 2 %s - %lu\n \"Resultado:Carta 2(%s) venceu na Populacao!\n\"", nome_cidade, populacao, nome_cidade2, populacao2, nome_cidade2);
+    } else {
+        printf("As cartas possuem a mesma Populacao!\n");
+    }
+
     return 0;
-
-
 }
