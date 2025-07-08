@@ -16,29 +16,34 @@ Como executar
 
 Autor
 
-Funcionalidades
+## Funcionalidades
 
-Leitura via teclado de duas cartas, cada uma com:
+O projeto implementa um jogo de batalha de cartas Super Trunfo com as seguintes características:
 
-Estado (char de 'A' a 'H')
+- **Cadastro de Cartas:** Permite ao usuário inserir via teclado os dados de duas cartas, incluindo:
+  - Estado (char)
+  - Código da Carta (string)
+  - Nome da Cidade (string)
+  - População (`unsigned long int`)
+  - Área (em km²)
+  - PIB (em bilhões de Reais)
+  - Número de Pontos Turísticos
 
-Código da Carta (string A01 a H04)
+- **Cálculos Automáticos:** O programa calcula e exibe automaticamente dois atributos derivados para cada carta:
+  - **Densidade Populacional:** Habitantes por km².
+  - **PIB per Capita:** Riqueza média por habitante.
 
-Nome da Cidade (string)
+- **Batalha Interativa com Múltiplos Atributos:**
+  - O jogador escolhe **dois atributos diferentes** para a comparação através de um menu dinâmico.
+  - O sistema impede a escolha do mesmo atributo duas vezes.
+  - A carta com o maior valor vence para a maioria dos atributos.
+  - **Regra Especial:** Para a **Densidade Populacional**, a carta com o **menor** valor é considerada mais forte.
 
-População (int)
-
-Área (float em km²)
-
-PIB (float em bilhões de Reais)
-
-Pontos Turísticos (int)
-
-Armazenamento em variáveis apropriadas.
-
-Cálculo de densidade populacional e PIB per Capita
-
-Exibição formatada e organizada no terminal.
+- **Determinação do Vencedor:**
+  - O sistema soma os "poderes" dos dois atributos escolhidos para cada carta.
+  - A carta com a **maior soma total** vence a rodada.
+  - O resultado da batalha é exibido de forma detalhada, incluindo os valores de cada atributo, a soma e a carta vencedora.
+  - O programa também trata corretamente os casos de **empate**.
 
 Pré-requisitos
 
